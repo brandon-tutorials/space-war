@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SpaceWar
+
+  Created by Brandon Grande on 26/05/24.
+  
+*/
+"name.game.title.text" = "Space war";
+"play.button.test" = "Play game";

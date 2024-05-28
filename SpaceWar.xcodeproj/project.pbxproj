@@ -7,26 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E340F6D2C050F8F003245FE /* GameScene+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F6C2C050F8F003245FE /* GameScene+Create.swift */; };
+		1E340F702C052D53003245FE /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F6F2C052D53003245FE /* Nodes.swift */; };
+		1E340F722C05410B003245FE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F712C05410B003245FE /* Player.swift */; };
+		1E340F742C054888003245FE /* GameScene+Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F732C054888003245FE /* GameScene+Touch.swift */; };
+		1E340F762C0549B3003245FE /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F752C0549B3003245FE /* Asteroid.swift */; };
+		1E340F782C055485003245FE /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F772C055485003245FE /* Enemy.swift */; };
+		1E340F7A2C0597BE003245FE /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F792C0597BE003245FE /* Shot.swift */; };
 		1E9BFBA82C03BFD500A2316B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BFBA72C03BFD500A2316B /* AppDelegate.swift */; };
-		1E9BFBAA2C03BFD500A2316B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBA92C03BFD500A2316B /* GameScene.sks */; };
-		1E9BFBAC2C03BFD500A2316B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBAB2C03BFD500A2316B /* Actions.sks */; };
-		1E9BFBAE2C03BFD500A2316B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BFBAD2C03BFD500A2316B /* GameScene.swift */; };
 		1E9BFBB02C03BFD500A2316B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BFBAF2C03BFD500A2316B /* GameViewController.swift */; };
 		1E9BFBB32C03BFD500A2316B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBB22C03BFD500A2316B /* Base */; };
 		1E9BFBB52C03BFD700A2316B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBB42C03BFD700A2316B /* Assets.xcassets */; };
 		1E9BFBB82C03BFD700A2316B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBB72C03BFD700A2316B /* Base */; };
+		1E9BFBD12C03C66B00A2316B /* enemy-explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBC12C03C66B00A2316B /* enemy-explosion.mp3 */; };
+		1E9BFBD22C03C66B00A2316B /* menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBC22C03C66B00A2316B /* menu.mp3 */; };
+		1E9BFBD32C03C66B00A2316B /* player-explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBC32C03C66B00A2316B /* player-explosion.mp3 */; };
+		1E9BFBD42C03C66B00A2316B /* short-laser-gun-shot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBC42C03C66B00A2316B /* short-laser-gun-shot.mp3 */; };
+		1E9BFBD52C03C66B00A2316B /* space-game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBC52C03C66B00A2316B /* space-game.mp3 */; };
+		1E9BFBD62C03C66B00A2316B /* start-level.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBC62C03C66B00A2316B /* start-level.mp3 */; };
+		1E9BFBD72C03C66B00A2316B /* BossExplosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBC82C03C66B00A2316B /* BossExplosion.atlas */; };
+		1E9BFBD82C03C66B00A2316B /* BossTurbo.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBC92C03C66B00A2316B /* BossTurbo.atlas */; };
+		1E9BFBD92C03C66B00A2316B /* EnemyExplosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBCA2C03C66B00A2316B /* EnemyExplosion.atlas */; };
+		1E9BFBDA2C03C66B00A2316B /* EnemyTurbo.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBCB2C03C66B00A2316B /* EnemyTurbo.atlas */; };
+		1E9BFBDB2C03C66B00A2316B /* Explosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBCC2C03C66B00A2316B /* Explosion.atlas */; };
+		1E9BFBDC2C03C66B00A2316B /* PlayerExplosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBCD2C03C66B00A2316B /* PlayerExplosion.atlas */; };
+		1E9BFBDD2C03C66B00A2316B /* PlayerNormal.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBCE2C03C66B00A2316B /* PlayerNormal.atlas */; };
+		1E9BFBDE2C03C66B00A2316B /* PlayerTurbo.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBCF2C03C66B00A2316B /* PlayerTurbo.atlas */; };
+		1E9BFBE02C03C8C100A2316B /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BFBDF2C03C8C100A2316B /* MainMenuScene.swift */; };
+		1E9BFBE32C03CC0400A2316B /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BFBE22C03CC0400A2316B /* Background.swift */; };
+		1E9BFBE62C03E48E00A2316B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBE42C03E48E00A2316B /* Localizable.strings */; };
+		1E9BFBE92C03E67B00A2316B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BFBE82C03E67B00A2316B /* GameScene.swift */; };
+		1E9BFBEB2C03E8C900A2316B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BFBEA2C03E8C900A2316B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E340F6C2C050F8F003245FE /* GameScene+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Create.swift"; sourceTree = "<group>"; };
+		1E340F6F2C052D53003245FE /* Nodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nodes.swift; sourceTree = "<group>"; };
+		1E340F712C05410B003245FE /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1E340F732C054888003245FE /* GameScene+Touch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Touch.swift"; sourceTree = "<group>"; };
+		1E340F752C0549B3003245FE /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
+		1E340F772C055485003245FE /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		1E340F792C0597BE003245FE /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		1E9BFBA42C03BFD500A2316B /* SpaceWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9BFBA72C03BFD500A2316B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E9BFBA92C03BFD500A2316B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		1E9BFBAB2C03BFD500A2316B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		1E9BFBAD2C03BFD500A2316B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		1E9BFBAF2C03BFD500A2316B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		1E9BFBB22C03BFD500A2316B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E9BFBB42C03BFD700A2316B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E9BFBB72C03BFD700A2316B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E9BFBC12C03C66B00A2316B /* enemy-explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "enemy-explosion.mp3"; sourceTree = "<group>"; };
+		1E9BFBC22C03C66B00A2316B /* menu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu.mp3; sourceTree = "<group>"; };
+		1E9BFBC32C03C66B00A2316B /* player-explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "player-explosion.mp3"; sourceTree = "<group>"; };
+		1E9BFBC42C03C66B00A2316B /* short-laser-gun-shot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "short-laser-gun-shot.mp3"; sourceTree = "<group>"; };
+		1E9BFBC52C03C66B00A2316B /* space-game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "space-game.mp3"; sourceTree = "<group>"; };
+		1E9BFBC62C03C66B00A2316B /* start-level.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "start-level.mp3"; sourceTree = "<group>"; };
+		1E9BFBC82C03C66B00A2316B /* BossExplosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BossExplosion.atlas; sourceTree = "<group>"; };
+		1E9BFBC92C03C66B00A2316B /* BossTurbo.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BossTurbo.atlas; sourceTree = "<group>"; };
+		1E9BFBCA2C03C66B00A2316B /* EnemyExplosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EnemyExplosion.atlas; sourceTree = "<group>"; };
+		1E9BFBCB2C03C66B00A2316B /* EnemyTurbo.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EnemyTurbo.atlas; sourceTree = "<group>"; };
+		1E9BFBCC2C03C66B00A2316B /* Explosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Explosion.atlas; sourceTree = "<group>"; };
+		1E9BFBCD2C03C66B00A2316B /* PlayerExplosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerExplosion.atlas; sourceTree = "<group>"; };
+		1E9BFBCE2C03C66B00A2316B /* PlayerNormal.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerNormal.atlas; sourceTree = "<group>"; };
+		1E9BFBCF2C03C66B00A2316B /* PlayerTurbo.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerTurbo.atlas; sourceTree = "<group>"; };
+		1E9BFBDF2C03C8C100A2316B /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		1E9BFBE22C03CC0400A2316B /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		1E9BFBE52C03E48E00A2316B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1E9BFBE72C03E52200A2316B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1E9BFBE82C03E67B00A2316B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		1E9BFBEA2C03E8C900A2316B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +87,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E340F6B2C050EF3003245FE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1E9BFBE82C03E67B00A2316B /* GameScene.swift */,
+				1E9BFBAF2C03BFD500A2316B /* GameViewController.swift */,
+				1E340F732C054888003245FE /* GameScene+Touch.swift */,
+				1E340F6C2C050F8F003245FE /* GameScene+Create.swift */,
+				1E9BFBDF2C03C8C100A2316B /* MainMenuScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1E340F6E2C052D41003245FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E340F6F2C052D53003245FE /* Nodes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1E9BFB9B2C03BFD500A2316B = {
 			isa = PBXGroup;
 			children = (
@@ -59,16 +126,67 @@
 		1E9BFBA62C03BFD500A2316B /* SpaceWar */ = {
 			isa = PBXGroup;
 			children = (
+				1E9BFBBE2C03C62000A2316B /* Resources */,
 				1E9BFBA72C03BFD500A2316B /* AppDelegate.swift */,
-				1E9BFBA92C03BFD500A2316B /* GameScene.sks */,
-				1E9BFBAB2C03BFD500A2316B /* Actions.sks */,
-				1E9BFBAD2C03BFD500A2316B /* GameScene.swift */,
-				1E9BFBAF2C03BFD500A2316B /* GameViewController.swift */,
+				1E9BFBEA2C03E8C900A2316B /* Constants.swift */,
+				1E340F6E2C052D41003245FE /* Models */,
+				1E340F6B2C050EF3003245FE /* Scenes */,
 				1E9BFBB12C03BFD500A2316B /* Main.storyboard */,
 				1E9BFBB42C03BFD700A2316B /* Assets.xcassets */,
 				1E9BFBB62C03BFD700A2316B /* LaunchScreen.storyboard */,
 			);
 			path = SpaceWar;
+			sourceTree = "<group>";
+		};
+		1E9BFBBE2C03C62000A2316B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E9BFBE12C03CBD500A2316B /* SpriteNodes */,
+				1E9BFBC72C03C66B00A2316B /* Sounds */,
+				1E9BFBD02C03C66B00A2316B /* Textures */,
+				1E9BFBE42C03E48E00A2316B /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1E9BFBC72C03C66B00A2316B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1E9BFBC12C03C66B00A2316B /* enemy-explosion.mp3 */,
+				1E9BFBC22C03C66B00A2316B /* menu.mp3 */,
+				1E9BFBC32C03C66B00A2316B /* player-explosion.mp3 */,
+				1E9BFBC42C03C66B00A2316B /* short-laser-gun-shot.mp3 */,
+				1E9BFBC52C03C66B00A2316B /* space-game.mp3 */,
+				1E9BFBC62C03C66B00A2316B /* start-level.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		1E9BFBD02C03C66B00A2316B /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				1E9BFBC82C03C66B00A2316B /* BossExplosion.atlas */,
+				1E9BFBC92C03C66B00A2316B /* BossTurbo.atlas */,
+				1E9BFBCA2C03C66B00A2316B /* EnemyExplosion.atlas */,
+				1E9BFBCB2C03C66B00A2316B /* EnemyTurbo.atlas */,
+				1E9BFBCC2C03C66B00A2316B /* Explosion.atlas */,
+				1E9BFBCD2C03C66B00A2316B /* PlayerExplosion.atlas */,
+				1E9BFBCE2C03C66B00A2316B /* PlayerNormal.atlas */,
+				1E9BFBCF2C03C66B00A2316B /* PlayerTurbo.atlas */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		1E9BFBE12C03CBD500A2316B /* SpriteNodes */ = {
+			isa = PBXGroup;
+			children = (
+				1E9BFBE22C03CC0400A2316B /* Background.swift */,
+				1E340F792C0597BE003245FE /* Shot.swift */,
+				1E340F712C05410B003245FE /* Player.swift */,
+				1E340F752C0549B3003245FE /* Asteroid.swift */,
+				1E340F772C055485003245FE /* Enemy.swift */,
+			);
+			path = SpriteNodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +231,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = 1E9BFB9B2C03BFD500A2316B;
 			productRefGroup = 1E9BFBA52C03BFD500A2316B /* Products */;
@@ -129,11 +248,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9BFBAA2C03BFD500A2316B /* GameScene.sks in Resources */,
+				1E9BFBDC2C03C66B00A2316B /* PlayerExplosion.atlas in Resources */,
+				1E9BFBD62C03C66B00A2316B /* start-level.mp3 in Resources */,
 				1E9BFBB32C03BFD500A2316B /* Base in Resources */,
+				1E9BFBD92C03C66B00A2316B /* EnemyExplosion.atlas in Resources */,
+				1E9BFBDA2C03C66B00A2316B /* EnemyTurbo.atlas in Resources */,
+				1E9BFBD32C03C66B00A2316B /* player-explosion.mp3 in Resources */,
+				1E9BFBDB2C03C66B00A2316B /* Explosion.atlas in Resources */,
+				1E9BFBD22C03C66B00A2316B /* menu.mp3 in Resources */,
+				1E9BFBD72C03C66B00A2316B /* BossExplosion.atlas in Resources */,
+				1E9BFBD12C03C66B00A2316B /* enemy-explosion.mp3 in Resources */,
 				1E9BFBB52C03BFD700A2316B /* Assets.xcassets in Resources */,
-				1E9BFBAC2C03BFD500A2316B /* Actions.sks in Resources */,
+				1E9BFBDD2C03C66B00A2316B /* PlayerNormal.atlas in Resources */,
+				1E9BFBD42C03C66B00A2316B /* short-laser-gun-shot.mp3 in Resources */,
+				1E9BFBE62C03E48E00A2316B /* Localizable.strings in Resources */,
 				1E9BFBB82C03BFD700A2316B /* Base in Resources */,
+				1E9BFBDE2C03C66B00A2316B /* PlayerTurbo.atlas in Resources */,
+				1E9BFBD52C03C66B00A2316B /* space-game.mp3 in Resources */,
+				1E9BFBD82C03C66B00A2316B /* BossTurbo.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,9 +276,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9BFBAE2C03BFD500A2316B /* GameScene.swift in Sources */,
+				1E9BFBE92C03E67B00A2316B /* GameScene.swift in Sources */,
+				1E340F6D2C050F8F003245FE /* GameScene+Create.swift in Sources */,
+				1E9BFBE02C03C8C100A2316B /* MainMenuScene.swift in Sources */,
+				1E340F762C0549B3003245FE /* Asteroid.swift in Sources */,
 				1E9BFBB02C03BFD500A2316B /* GameViewController.swift in Sources */,
 				1E9BFBA82C03BFD500A2316B /* AppDelegate.swift in Sources */,
+				1E9BFBE32C03CC0400A2316B /* Background.swift in Sources */,
+				1E9BFBEB2C03E8C900A2316B /* Constants.swift in Sources */,
+				1E340F782C055485003245FE /* Enemy.swift in Sources */,
+				1E340F722C05410B003245FE /* Player.swift in Sources */,
+				1E340F742C054888003245FE /* GameScene+Touch.swift in Sources */,
+				1E340F7A2C0597BE003245FE /* Shot.swift in Sources */,
+				1E340F702C052D53003245FE /* Nodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +311,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		1E9BFBE42C03E48E00A2316B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E9BFBE52C03E48E00A2316B /* en */,
+				1E9BFBE72C03E52200A2316B /* es-419 */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -177,6 +328,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -240,6 +392,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -300,17 +453,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SW9QQ6ZD45;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Space war";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sw.SpaceWar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -328,17 +481,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SW9QQ6ZD45;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Space war";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sw.SpaceWar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -52,13 +52,13 @@ extension GameScene{
     
     func createPlayer(){
         let texture = SKTexture(imageNamed: Constants.Images.player)
-        print(size.width)
-        print(size.height)
         let position = CGPoint(x: -size.width * 0.15, y: size.height * 0.5)
         
         player = Player(texture:texture, size:texture.size(), position:position)
         player.name = Nodes.player.rawValue
-        player.addNormalEnginefire(with: Constants.Textures.playerTurboFire)
+        player.addNormalEnginefire(with: Constants.Textures.playerNormal)
+        player.addTurboEnginefire(with: Constants.Textures.playerTurboFire)
+
         addChild(player)
        
         let moveDistance = CGFloat((size.width*0.15) * 2)

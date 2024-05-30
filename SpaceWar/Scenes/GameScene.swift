@@ -11,6 +11,11 @@ import GameplayKit
 
 final class GameScene: SKScene {
     var player = Player()
+    var joystickIsActive = false
+    var selectedNodes: [UITouch: SKSpriteNode] = [:]
+    var playerVelocityX: CGFloat = 0
+    var playerVelocityY: CGFloat = 0
+
     let joystickBase = SKSpriteNode(imageNamed: Constants.Images.joystickBase)
     let joystick = SKSpriteNode(imageNamed: Constants.Images.joystick)
     let firePad = SKSpriteNode(imageNamed: Constants.Images.firePad)
@@ -24,6 +29,12 @@ final class GameScene: SKScene {
     }
     
     override func update(_ currentTime: TimeInterval) {
+        if joystickIsActive{
+            player.position = CGPointMake(player.position.x + (playerVelocityX * 4), player.position.y + (playerVelocityY * 4))
+        }
+        player.normalEnginePlayerIsHidden(joystickIsActive)
+        player.turboEnginePlayerIsHidden(!joystickIsActive)
+        
     }
     
     private func addAsteroids(){

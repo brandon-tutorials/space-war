@@ -9,6 +9,9 @@ import SpriteKit
 
 final class Player : SKSpriteNode{
     
+    private var normalEnginePlayer = SKSpriteNode()
+    private var turboEnginePlayer = SKSpriteNode()
+    
     init(){
         super.init(texture: nil, color: .clear, size: .zero)
     }
@@ -39,13 +42,15 @@ final class Player : SKSpriteNode{
         }
         
         let firstFrameTexture = frames[0]
-        let normalPlayer = SKSpriteNode(texture:firstFrameTexture)
+        normalEnginePlayer = SKSpriteNode(texture:firstFrameTexture)
         
-        normalPlayer.position = CGPoint(x: (-size.width/2) - 10.0 , y: 0.0)
+        normalEnginePlayer.position = CGPoint(x: (-size.width/2) - 10.0 , y: 0.0)
         
-        addChild(normalPlayer)
+        addChild(normalEnginePlayer)
         
-        normalPlayer.run(SKAction.repeatForever(SKAction.animate(with: frames, timePerFrame: 0.1, resize: false, restore: true)))
+        normalEnginePlayer.run(SKAction.repeatForever(SKAction.animate(with: frames, timePerFrame: 0.1, resize: false, restore: true)))
+        
+        normalEnginePlayer.isHidden = true
     }
     
     func addTurboEnginefire(with texture: String){
@@ -60,12 +65,29 @@ final class Player : SKSpriteNode{
         }
         
         let firstFrameTexture = frames[0]
-        let normalPlayer = SKSpriteNode(texture:firstFrameTexture)
+        turboEnginePlayer = SKSpriteNode(texture:firstFrameTexture)
         
-        normalPlayer.position = CGPoint(x: (-size.width/2) - 10.0 , y: 0.0)
+        turboEnginePlayer.position = CGPoint(x: (-size.width/2) - 10.0 , y: 0.0)
         
-        addChild(normalPlayer)
+        addChild(turboEnginePlayer)
         
-        normalPlayer.run(SKAction.repeatForever(SKAction.animate(with: frames, timePerFrame: 0.1, resize: false, restore: true)))
+        turboEnginePlayer.run(SKAction.repeatForever(SKAction.animate(with: frames, timePerFrame: 0.1, resize: false, restore: true)))
+        
+        turboEnginePlayer.isHidden = true
+    }
+    
+    func shot(){
+        let texture = SKTexture(imageNamed: Constants.Images.playerShot)
+        let shot = Shot(texture: texture, position: CGPoint(x: 50, y: 0), type: .leftToRight)
+        shot.movement()
+        addChild(shot)
+    }
+    
+    func normalEnginePlayerIsHidden(_ isHidden: Bool){
+        normalEnginePlayer.isHidden = isHidden
+    }
+    
+    func turboEnginePlayerIsHidden(_ isHidden: Bool){
+        turboEnginePlayer.isHidden = isHidden
     }
 }

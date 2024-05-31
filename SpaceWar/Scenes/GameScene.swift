@@ -9,12 +9,21 @@
 import SpriteKit
 import GameplayKit
 
-final class GameScene: SKScene {
+final class GameScene: ParentScene {
+    private struct SceneTraits{
+        static let animation: CGFloat = 0.25
+    }
     var player = Player()
     var joystickIsActive = false
     var selectedNodes: [UITouch: SKSpriteNode] = [:]
     var playerVelocityX: CGFloat = 0
     var playerVelocityY: CGFloat = 0
+    var enemiesDestroyed: Int = 0 {
+        didSet{
+            ScoreManager.saveScore(score: enemiesDestroyed)
+            scoreLabel.text = String(format: NSLocalizedString("score.text", comment: ""), String(ScoreManager.getScore()))
+        }
+    }
 
     let joystickBase = SKSpriteNode(imageNamed: Constants.Images.joystickBase)
     let joystick = SKSpriteNode(imageNamed: Constants.Images.joystick)
@@ -26,6 +35,14 @@ final class GameScene: SKScene {
         createPlayer()
         addAsteroids()
         addEnemies()
+        setupPhysics()
+        createScoreLabel()
+    }
+    
+    private func setupPhysics() {
+        physicsWorld.gravity = .zero
+        physicsWorld.contactDelegate = self
+        physicsBody = SKPhysicsBody(edgeLoopFrom: CGRectMake(CGRectGetMinX(frame), CGRectGetMinY(frame), frame.size.width, frame.size.height))
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -34,6 +51,13 @@ final class GameScene: SKScene {
         }
         player.normalEnginePlayerIsHidden(joystickIsActive)
         player.turboEnginePlayerIsHidden(!joystickIsActive)
+        
+    }
+    
+    func endGame(isWin: Bool){
+        let transition = SKTransition.crossFade(withDuration: SceneTraits.animation )
+        let gameScene = GameOverScene(size: self.size, win: isWin)
+        view?.presentScene(gameScene, transition: transition)
         
     }
     

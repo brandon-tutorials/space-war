@@ -5,6 +5,9 @@
 //  Created by Brandon Grande on 26/05/24.
 //
 enum Constants{
+    struct Keys {
+        static let score = "score"
+    }
     struct Images {
         static let asteroid = "img_asteroids"
         static let enemy = "img_enemy"
@@ -20,6 +23,9 @@ enum Constants{
     
     struct Textures{
         static let texture = "texture_%d"
+        static let explosion = "Explosion"
+        static let enemyExplosion = "EnemyExplosion"
+        static let playerExplosion = "PlayerExplosion"
         static let enemyTurbo = "EnemyTurbo"
         static let playerNormal = "PlayerNormal"
         static let playerTurboFire = "PlayerTurbo"

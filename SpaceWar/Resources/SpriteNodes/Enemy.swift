@@ -24,6 +24,13 @@ final class Enemy: SKSpriteNode{
     
     private func setup(){
         zPosition = 1
+        physicsBody = SKPhysicsBody(rectangleOf: size)
+        physicsBody?.isDynamic = true
+        physicsBody?.categoryBitMask = PhysicsCategory.enemy
+        physicsBody?.contactTestBitMask = PhysicsCategory.player
+        physicsBody?.collisionBitMask = PhysicsCategory.none
+        physicsBody?.usesPreciseCollisionDetection = true
+        
     }
     
     func movement(){
@@ -58,7 +65,7 @@ final class Enemy: SKSpriteNode{
         let shotDelay = SKAction.wait(forDuration: 1.5)
         let shotAction = SKAction.run {
             let texture = SKTexture(imageNamed: Constants.Images.enemyShot)
-            let shot = Shot(texture:texture, position: CGPoint(x:-50.0, y:0.0),type: .righToLeft)
+            let shot = Shot(texture:texture, position: CGPoint(x:-50.0, y:0.0),shotDirection: .righToLeft, spriteType: SpriteType.enemy)
             shot.movement()
             self.addChild(shot)
         }

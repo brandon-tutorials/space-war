@@ -21,7 +21,12 @@ final class Asteroid: SKSpriteNode{
     private func setup(with position: CGPoint){
         zPosition = 1
         self.position = position
-        rotate()
+        rotate()        
+        physicsBody = SKPhysicsBody(rectangleOf: size)
+        physicsBody?.isDynamic = true
+        physicsBody?.categoryBitMask = PhysicsCategory.enemy
+        physicsBody?.collisionBitMask = PhysicsCategory.none
+        physicsBody?.usesPreciseCollisionDetection = true
     }
     
     private func rotate(){

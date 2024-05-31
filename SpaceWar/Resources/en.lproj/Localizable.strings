@@ -7,3 +7,6 @@
 */
 "name.game.title.text" = "Space war";
 "play.button.test" = "Play game";
+"game.over" = "Game Over";
+"game.win" = "You win!";
+"score.text" = "Score: %@";

@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-final class MainMenuScene: SKScene {
+final class MainMenuScene: ParentScene {
     
     private struct SceneTraits{
         /* Margin */
@@ -32,6 +32,7 @@ final class MainMenuScene: SKScene {
         createBackground()
         createTitleLabel()
         createPlayLabel()
+        createScoreLabel()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

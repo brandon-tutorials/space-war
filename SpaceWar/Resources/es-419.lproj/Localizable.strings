@@ -5,5 +5,8 @@
   Created by Brandon Grande on 26/05/24.
   
 */
-"name.game.title.text" = "Space war";
+"name.game.title.text" = "Guerra de galaxias";
 "play.button.test" = "Jugar";
+"game.over" = "Perdiste";
+"game.win" = "Ganaste!";
+"score.text" = "Puntuación: %@";

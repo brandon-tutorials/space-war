@@ -78,7 +78,7 @@ final class Player : SKSpriteNode{
     
     func shot(){
         let texture = SKTexture(imageNamed: Constants.Images.playerShot)
-        let shot = Shot(texture: texture, position: CGPoint(x: 50, y: 0), type: .leftToRight)
+        let shot = Shot(texture: texture, position: CGPoint(x: 50, y: 0), shotDirection: .leftToRight, spriteType: SpriteType.player)
         shot.movement()
         addChild(shot)
     }

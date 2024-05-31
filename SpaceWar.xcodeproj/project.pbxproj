@@ -14,6 +14,13 @@
 		1E340F762C0549B3003245FE /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F752C0549B3003245FE /* Asteroid.swift */; };
 		1E340F782C055485003245FE /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F772C055485003245FE /* Enemy.swift */; };
 		1E340F7A2C0597BE003245FE /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F792C0597BE003245FE /* Shot.swift */; };
+		1E340F7C2C082EBB003245FE /* GameScene+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F7B2C082EBB003245FE /* GameScene+Delegate.swift */; };
+		1E340F7E2C0831E0003245FE /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F7D2C0831E0003245FE /* PhysicsCategory.swift */; };
+		1E340F812C08E5BA003245FE /* GameScene+Collision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F802C08E5BA003245FE /* GameScene+Collision.swift */; };
+		1E340F832C08F513003245FE /* Explosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F822C08F513003245FE /* Explosion.swift */; };
+		1E340F852C0938D9003245FE /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F842C0938D9003245FE /* GameOverScene.swift */; };
+		1E340F882C0940D7003245FE /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F872C0940D7003245FE /* ScoreManager.swift */; };
+		1E340F8A2C094470003245FE /* ParentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E340F892C094470003245FE /* ParentScene.swift */; };
 		1E9BFBA82C03BFD500A2316B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BFBA72C03BFD500A2316B /* AppDelegate.swift */; };
 		1E9BFBB02C03BFD500A2316B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BFBAF2C03BFD500A2316B /* GameViewController.swift */; };
 		1E9BFBB32C03BFD500A2316B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BFBB22C03BFD500A2316B /* Base */; };
@@ -48,6 +55,13 @@
 		1E340F752C0549B3003245FE /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
 		1E340F772C055485003245FE /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		1E340F792C0597BE003245FE /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
+		1E340F7B2C082EBB003245FE /* GameScene+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Delegate.swift"; sourceTree = "<group>"; };
+		1E340F7D2C0831E0003245FE /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		1E340F802C08E5BA003245FE /* GameScene+Collision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Collision.swift"; sourceTree = "<group>"; };
+		1E340F822C08F513003245FE /* Explosion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explosion.swift; sourceTree = "<group>"; };
+		1E340F842C0938D9003245FE /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		1E340F872C0940D7003245FE /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		1E340F892C094470003245FE /* ParentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentScene.swift; sourceTree = "<group>"; };
 		1E9BFBA42C03BFD500A2316B /* SpaceWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9BFBA72C03BFD500A2316B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E9BFBAF2C03BFD500A2316B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +109,10 @@
 				1E340F732C054888003245FE /* GameScene+Touch.swift */,
 				1E340F6C2C050F8F003245FE /* GameScene+Create.swift */,
 				1E9BFBDF2C03C8C100A2316B /* MainMenuScene.swift */,
+				1E340F7B2C082EBB003245FE /* GameScene+Delegate.swift */,
+				1E340F802C08E5BA003245FE /* GameScene+Collision.swift */,
+				1E340F842C0938D9003245FE /* GameOverScene.swift */,
+				1E340F892C094470003245FE /* ParentScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -103,8 +121,17 @@
 			isa = PBXGroup;
 			children = (
 				1E340F6F2C052D53003245FE /* Nodes.swift */,
+				1E340F7D2C0831E0003245FE /* PhysicsCategory.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1E340F862C0940C5003245FE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1E340F872C0940D7003245FE /* ScoreManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		1E9BFB9B2C03BFD500A2316B = {
@@ -141,6 +168,7 @@
 		1E9BFBBE2C03C62000A2316B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E340F862C0940C5003245FE /* Managers */,
 				1E9BFBE12C03CBD500A2316B /* SpriteNodes */,
 				1E9BFBC72C03C66B00A2316B /* Sounds */,
 				1E9BFBD02C03C66B00A2316B /* Textures */,
@@ -185,6 +213,7 @@
 				1E340F712C05410B003245FE /* Player.swift */,
 				1E340F752C0549B3003245FE /* Asteroid.swift */,
 				1E340F772C055485003245FE /* Enemy.swift */,
+				1E340F822C08F513003245FE /* Explosion.swift */,
 			);
 			path = SpriteNodes;
 			sourceTree = "<group>";
@@ -277,17 +306,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9BFBE92C03E67B00A2316B /* GameScene.swift in Sources */,
+				1E340F882C0940D7003245FE /* ScoreManager.swift in Sources */,
 				1E340F6D2C050F8F003245FE /* GameScene+Create.swift in Sources */,
 				1E9BFBE02C03C8C100A2316B /* MainMenuScene.swift in Sources */,
+				1E340F812C08E5BA003245FE /* GameScene+Collision.swift in Sources */,
 				1E340F762C0549B3003245FE /* Asteroid.swift in Sources */,
 				1E9BFBB02C03BFD500A2316B /* GameViewController.swift in Sources */,
 				1E9BFBA82C03BFD500A2316B /* AppDelegate.swift in Sources */,
 				1E9BFBE32C03CC0400A2316B /* Background.swift in Sources */,
 				1E9BFBEB2C03E8C900A2316B /* Constants.swift in Sources */,
 				1E340F782C055485003245FE /* Enemy.swift in Sources */,
+				1E340F7C2C082EBB003245FE /* GameScene+Delegate.swift in Sources */,
 				1E340F722C05410B003245FE /* Player.swift in Sources */,
+				1E340F832C08F513003245FE /* Explosion.swift in Sources */,
 				1E340F742C054888003245FE /* GameScene+Touch.swift in Sources */,
+				1E340F7E2C0831E0003245FE /* PhysicsCategory.swift in Sources */,
+				1E340F8A2C094470003245FE /* ParentScene.swift in Sources */,
 				1E340F7A2C0597BE003245FE /* Shot.swift in Sources */,
+				1E340F852C0938D9003245FE /* GameOverScene.swift in Sources */,
 				1E340F702C052D53003245FE /* Nodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
